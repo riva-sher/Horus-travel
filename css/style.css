@@ -369,7 +369,7 @@ p { margin: 0 0 1em; }
 .stats {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: clamp(56px, 7vw, 88px) 0 0;
   padding: 0;
   list-style: none;
@@ -394,6 +394,7 @@ p { margin: 0 0 1em; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stats li, .stats li:first-child { padding: 22px 0; border-left: 0; border-top: 1px solid rgba(255, 255, 255, .08); }
   .stats li:nth-child(1), .stats li:nth-child(2) { border-top: 0; }
+  .stats li:last-child { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
   .hero-art { display: none; }
